@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-black overflow-x-hidden font-['Inter']">
+    <!-- outer div -->
+    <div class="w-full h-screen container mx-auto flex justify-center items-center">
+      <!-- Inner div -->
+      <div
+        class="md:w-[50rem] container flex flex-col items-center justify-center"
+      >
+        <!-- checkout nav -->
+        <div
+          class="md:w-[31rem] md:flex sm:hidden border-b border-b-cyan-400 justify-between items-center text-white text-xs"
+        >
+          <p class="sm:hidden">CHECKOUT</p>
+          <div class="flex justify-center items-center space-x-1 sm:hidden">
+            <ion-icon name="person"></ion-icon>
+            <span>JOHN</span>
+          </div>
+        </div>
+    <!-- nav bar -->
+    <div
+    class="md:hidden w-[20rem] h-12 flex justify-between items-center bg-[#2A2A2A] px-2"
+  >
+    <!-- logo section -->
+    <div class="flex space-x-1.5 items-center justify-center">
+      <div>
+        <ion-icon
+          name="game-controller"
+          size="large"
+          class="text-white pt-3"
+        ></ion-icon>
+      </div>
+      <div class="text-white">
+        <p class="text-sm font-['Iceberg']">MAX</p>
+        <p class="text-xs font-['Iceberg'] leading-[8px]">Gaming Store</p>
+      </div>
+    </div>
+    <!-- home section -->
+    <div
+      class="flex items-center justify-center text-white font-['Inter']"
+    >
+      <ion-icon name="person" size="small"></ion-icon>
+    </div>
+  </div>
+        <!-- order summary -->
+        <div
+          class="w-96 bg-[#2A2A2A] flex flex-col justify-center item-center text-white mt-3 px-5 py-4 rounded-md"
+        >
+          <p class="text-sm">ORDER SUMMARY</p>
+          <!-- FIFA -->
+          <div class="flex items-center space-x-14">
+            <!-- img -->
+            <img
+              src="../img/FIFA_22_Cover.jpg"
+              alt=""
+              width="35%"
+              class="h-32"
+            />
+            <p class="text-lg font-semibold">FIFA 2022</p>
+          </div>
+          <!-- Payment  -->
+          <div class="flex justify-between items-center mt-2 text-xs">
+            <p>Price</p>
+            <p>$39.99</p>
+          </div>
+          <div class="flex justify-between items-center mt-1 text-xs border-b border-b-white">
+            <p>Sale Discount</p>
+            <p>$$20.00</p>
+          </div>
+          <div class="flex justify-between items-center mt-2 text-xs">
+            <p>Total</p>
+            <p>$19.99</p>
+          </div>
+          <div class="mt-5">
+            <p class="text-sm">Payment Methods</p>
+            <ul class="list-disc px-8 text-xs mt-2">
+                <li>
+                    <ion-icon name="person"></ion-icon>
+                    <span>Credit Card</span>
+                </li>
+                <li>
+                    <ion-icon name="logo-paypal"></ion-icon>
+                    <span>PayPal</span>
+                </li>
+                <li>
+                    <span>Other</span>
+                </li>
+            </ul>
+            <div class="flex space-x-3 mt-3">
+                <ion-icon name="stop" size="large"></ion-icon>
+                <span class="text-[10px] mt-2 text-justify">Click here to agree to share your email with MAX gaming and will use your email address for marketing and othewise in accordance with its privacy policy.</span>
+            </div>
+            <p class="text-[10px] mt-5 text-justify">By clicking  "Place Order" below, I represent that I am over 18 and an authorized user of this payment method, I agree to the terms and conditions.</p>
+          </div>
+          <button class="bg-[#1F93D4] w-44 rounded-sm text-xs font-semibold py-2 mx-auto mt-5 hover:text-cyan-500 hover:bg-white focus:ring focus:outline-none active:bg-cyan-700">
+            PLACE ORDER
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<!-- <ion-icon name="person"></ion-icon>
+    <ion-icon name="card"></ion-icon>
+
+-->

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Iceberg&family=Inter&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-black overflow-x-hidden">
+    <!-- nav bar -->
+    <div
+      class="w-full h-12 flex justify-between item center bg-[#2A2A2A] px-3"
+    >
+      <!-- logo section -->
+      <div class="flex space-x-1.5 items-center justify-center">
+        <div>
+          <ion-icon
+            name="game-controller"
+            size="large"
+            class="text-white pt-3"
+          ></ion-icon>
+        </div>
+        <div class="text-white">
+          <p class="text-sm font-['Iceberg']">MAX</p>
+          <p class="text-xs font-['Iceberg'] leading-[8px]">Gaming Store</p>
+        </div>
+      </div>
+      <!-- home section -->
+      <div
+        class="w-96 flex items-center justify-center text-white text-xs font-['Inter']"
+      >
+        <ul class="flex items-center space-x-6">
+          <li class="hover:border-b-2 hover:border-b-blue-600">Home</li>
+          <li class="hover:border-b-2 hover:border-b-blue-600">About Us</li>
+          <li class="hover:border-b-2 hover:border-b-blue-600">Contact</li>
+          <li class="hover:border-b-2 hover:border-b-blue-600">All Products</li>
+          <button
+            class="w-14 bg-yellow-400 rounded-sm py-1 text-black hover:bg-black hover:text-yellow-400 active:w-16 active:bg-yellow-500"
+          >
+            <a href="../src/singin.html" target="_blank">Log In</a>
+          </button>
+        </ul>
+      </div>
+    </div>
+    <!-- product detail -->
+    <div
+      class="w-full container mx-auto flex flex-col items-center justify-center"
+    >
+      <!-- search bar -->
+      <div
+        class="w-[18rem] bg-[#2A2A2A] rounded-xl mx-auto mt-4 flex py-1 px-1 space-x-2 justify-start items-center"
+      >
+        <ion-icon name="search" class="text-[#A19393]"></ion-icon>
+        <input
+          type="text"
+          name=""
+          id="name"
+          placeholder="Search Store"
+          class="text-sm bg-[#2A2A2A] focus:outline-none text-[#A19393]"
+        />
+      </div>
+    </div>
+    <!-- show -->
+    <div
+      class="w-full container mx-auto flex items-center justify-start px-56 mt-2"
+    >
+      <div
+        class="w-32 flex justify-center items-center mt-3 text-white text-xs space-x-1 font-semibold"
+      >
+        <p>Show</p>
+        <div class="flex items-center justify-center border border-white px-1 hover:border-blue-600 hover:text-blue-600">
+          <p>All</p>
+          <ion-icon name="caret-down"></ion-icon>
+        </div>
+      </div>
+    </div>
+    <!-- card detail flex flex-wrap items-center justify-center space-x-2-->
+    <div
+      class="w-[55rem] container mx-auto grid grid-rows-2 grid-cols-3 place-items-center mt-5 place-content-center"
+    >
+      <!-- card 1 -->
+      <div
+        class="w-64 flex flex-col items-center justify-center bg-black rounded-md"
+      >
+        <div class="w-auto inline-block mx-auto">
+          <img src="../img/fifa-23.jpg" alt="" width="" class="rounded-md" />
+        </div>
+        <div class="flex flex-col items-center justify-center text-white pb-5">
+          <div class="flex items-center justify-between w-64 px-1 py-1">
+            <p class="text-sm font-semibold">FIFA 2023</p>
+            <div>
+              <ion-icon name="logo-xbox"></ion-icon>
+              <ion-icon name="logo-windows"></ion-icon>
+            </div>
+          </div>
+          <div class="flex items-center justify-start w-64 px-1">
+            <p class="text-sm font-semibold">Available Now</p>
+          </div>
+          <div class="flex items-center justify-between w-64 px-1 py--1 mt-2">
+            <button
+              class="bg-[#2993FA] text-white text-xs text-center px-1 py-1 flex justify-center items-center rounded-sm space-x-5 hover:bg-[#2A2A2A] hover:text-blue-600"
+            >
+              <div>
+                <ion-icon name="star"></ion-icon>
+                <span>4.7</span>
+              </div>
+              <p>$39.99</p>
+            </button>
+            <button
+              class="bg-yellow-400 text-black text-xs rounded-sm px-3 py-1 hover:bg-[#2A2A2A] hover:text-yellow-500 active:px-4 active:py-1.5"
+            >
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- card 2 -->
+      <div
+        class="w-64 flex flex-col items-center justify-center bg-black rounded-md"
+      >
+        <div class="w-auto inline-block mx-auto">
+          <img
+            src="../img/heroes-of-rome-3.jpg"
+            alt=""
+            width=""
+            class="rounded-md"
+          />
+        </div>
+        <div class="flex flex-col items-center justify-center text-white pb-5">
+          <div class="flex items-center justify-between w-64 px-1 py-1">
+            <p class="text-sm font-semibold">HEROES OF ROME 3</p>
+            <div>
+              <ion-icon name="logo-xbox"></ion-icon>
+              <ion-icon name="logo-windows"></ion-icon>
+            </div>
+          </div>
+          <div class="flex items-center justify-start w-64 px-1">
+            <p class="text-sm font-semibold">Available Now</p>
+          </div>
+          <div class="flex items-center justify-between w-64 px-1 py--1 mt-2">
+            <button
+              class="bg-[#2993FA] text-white text-xs text-center px-1 py-1 flex justify-center items-center rounded-sm space-x-5 hover:bg-[#2A2A2A] hover:text-blue-600"
+            >
+              <div>
+                <ion-icon name="star"></ion-icon>
+                <span>3.7</span>
+              </div>
+              <p>$3.29</p>
+            </button>
+            <button
+              class="bg-yellow-400 text-black text-xs rounded-sm px-3 py-1 hover:bg-[#2A2A2A] hover:text-yellow-500 active:px-4 active:py-1.5"
+            >
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- card 3 -->
+      <div
+        class="w-64 flex flex-col items-center justify-center bg-black rounded-md"
+      >
+        <div class="w-auto inline-block mx-auto">
+          <img src="../img/remains.jpg" alt="" width="" class="rounded-md" />
+        </div>
+        <div class="flex flex-col items-center justify-center text-white pb-5">
+          <div class="flex items-center justify-between w-64 px-1 py-1">
+            <p class="text-sm font-semibold">REMAINS</p>
+            <div>
+              <ion-icon name="logo-xbox"></ion-icon>
+              <ion-icon name="logo-windows"></ion-icon>
+            </div>
+          </div>
+          <div class="flex items-center justify-start w-64 px-1">
+            <p class="text-sm font-semibold">Available Now</p>
+          </div>
+          <div class="flex items-center justify-between w-64 px-1 py--1 mt-2">
+            <button
+              class="bg-[#2993FA] text-white text-xs text-center px-1 py-1 flex justify-center items-center rounded-sm space-x-5 hover:bg-[#2A2A2A] hover:text-blue-600"
+            >
+              <div>
+                <ion-icon name="star"></ion-icon>
+                <span>3.4</span>
+              </div>
+              <p>$1.99</p>
+            </button>
+            <button
+              class="bg-yellow-400 text-black text-xs rounded-sm px-3 py-1 hover:bg-[#2A2A2A] hover:text-yellow-500 active:px-4 active:py-1.5"
+            >
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- card 4 -->
+      <div
+        class="w-64 flex flex-col items-center justify-center bg-black rounded-md"
+      >
+        <div class="w-auto inline-block mx-auto">
+          <img src="../img/sphere3.jpg" alt="" width="" class="rounded-md" />
+        </div>
+        <div class="flex flex-col items-center justify-center text-white pb-5">
+          <div class="flex items-center justify-between w-64 px-1 py-1">
+            <p class="text-sm font-semibold">SPHERE 3</p>
+            <div>
+              <ion-icon name="logo-xbox"></ion-icon>
+              <ion-icon name="logo-windows"></ion-icon>
+            </div>
+          </div>
+          <div class="flex items-center justify-start w-64 px-1">
+            <p class="text-sm font-semibold">Available Now</p>
+          </div>
+          <div class="flex items-center justify-between w-64 px-1 py--1 mt-2">
+            <button
+              class="bg-[#2993FA] text-white text-xs text-center px-1 py-1 flex justify-center items-center rounded-sm space-x-5 hover:bg-[#2A2A2A] hover:text-blue-600"
+            >
+              <div>
+                <ion-icon name="star"></ion-icon>
+                <span>4.0</span>
+              </div>
+              <p>FREE</p>
+            </button>
+            <button
+              class="bg-yellow-400 text-black text-xs rounded-sm px-3 py-1 hover:bg-[#2A2A2A] hover:text-yellow-500 active:px-4 active:py-1.5"
+            >
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- card 5 -->
+      <div
+        class="w-64 flex flex-col items-center justify-center bg-black rounded-md"
+      >
+        <div class="w-auto inline-block mx-auto">
+          <img
+            src="../img/world-turtle.jpg"
+            alt=""
+            width=""
+            class="rounded-md"
+          />
+        </div>
+        <div class="flex flex-col items-center justify-center text-white pb-5">
+          <div class="flex items-center justify-between w-64 px-1 py-1">
+            <p class="text-sm font-semibold">WORLD TURTLES</p>
+            <div>
+              <ion-icon name="logo-xbox"></ion-icon>
+              <ion-icon name="logo-windows"></ion-icon>
+            </div>
+          </div>
+          <div class="flex items-center justify-start w-64 px-1">
+            <p class="text-sm font-semibold">Available Now</p>
+          </div>
+          <div class="flex items-center justify-between w-64 px-1 py--1 mt-2">
+            <button
+              class="bg-[#2993FA] text-white text-xs text-center px-1 py-1 flex justify-center items-center rounded-sm space-x-5 hover:bg-[#2A2A2A] hover:text-blue-600"
+            >
+              <div>
+                <ion-icon name="star"></ion-icon>
+                <span>3.1</span>
+              </div>
+              <p>$5.29</p>
+            </button>
+            <button
+              class="bg-yellow-400 text-black text-xs rounded-sm px-3 py-1 hover:bg-[#2A2A2A] hover:text-yellow-500 active:px-4 active:py-1.5"
+            >
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- card 6 -->
+      <div
+        class="w-64 flex flex-col items-center justify-center bg-black rounded-md"
+      >
+        <div class="w-auto inline-block mx-auto">
+          <img
+            src="../img/EGS_DeadbyDaylight.jpg"
+            alt=""
+            width=""
+            class="rounded-md"
+          />
+        </div>
+        <div class="flex flex-col items-center justify-center text-white pb-5">
+          <div class="flex items-center justify-between w-64 px-1 py-1">
+            <p class="text-sm font-semibold">DEAD BY DAYLIGHT</p>
+            <div>
+              <ion-icon name="logo-xbox"></ion-icon>
+              <ion-icon name="logo-windows"></ion-icon>
+            </div>
+          </div>
+          <div class="flex items-center justify-start w-64 px-1">
+            <p class="text-sm font-semibold">Available Now</p>
+          </div>
+          <div class="flex items-center justify-between w-64 px-1 py--1 mt-2">
+            <button
+              class="bg-[#2993FA] text-white text-xs text-center px-1 py-1 flex justify-center items-center rounded-sm space-x-5 hover:bg-[#2A2A2A] hover:text-blue-600"
+            >
+              <div>
+                <ion-icon name="star"></ion-icon>
+                <span>4.7</span>
+              </div>
+              <p>$29.99</p>
+            </button>
+            <button
+              class="bg-yellow-400 text-black text-xs rounded-sm px-3 py-1 hover:bg-[#2A2A2A] hover:text-yellow-500 active:px-4 active:py-1.5"
+            >
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <div
+      class="w-full h-20 flex justify-between items-center bg-[#2A2A2A] px-5 mt-5 py-2"
+    >
+      <!-- fist col -->
+      <div class="flex flex-col items-center justify-center text-white text-xs ">
+        <div class="flex items-center justify-center space-x-1">
+          <ion-icon name="logo-facebook"></ion-icon>
+          <ion-icon name="logo-youtube"></ion-icon>
+          <ion-icon name="logo-twitter"></ion-icon>
+        </div>
+        <div class="text-xs">
+          <p>Contact</p>
+          <p>FAQ</p>
+          <p>Support</p>
+        </div>
+      </div>
+      <!-- second col -->
+      <div class="text-white w-96 flex flex-col justify-center ">
+        <p class="text-xs">About Us</p>
+        <p class="text-[10px] text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt sapiente dolorem sequi minima nesciunt iure quis veritatis doloremque non eum expedita unde facilis nam id voluptas deleniti eligendi, fugit tempor</p>
+      </div>
+      <!-- third col -->
+      <div class="flex space-x-1.5 items-center justify-center ">
+        <div>
+          <ion-icon
+            name="game-controller"
+            size="large"
+            class="text-white pt-3"
+          ></ion-icon>
+        </div>
+        <div class="text-white">
+          <p class="text-sm font-['Iceberg']">MAX</p>
+          <p class="text-xs font-['Iceberg'] leading-[8px]">Gaming Store</p>
+        </div>
+      </div>
+      <!-- fourth col -->
+      <div class="text-white w-72 flex flex-col items-center justify-center ">
+        <p class="text-[10px] text-justify">Copyright@Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt sapiente dolorem sequi minima nesciunt</p>
+      </div>
+      <!-- fifth col -->
+      <div class="text-white w-52 flex flex-col justify-center  text-end">
+        <p class="text-[10px]">Terms of Service</p>
+        <p class="text-[10px]">Privacy Policy</p>
+        <p class="text-[10px]">Store Refund Policy</p>
+      </div>
+    </div>
+  </body>
+</html>
+<!-- 
+    <ion-icon name="star"></ion-icon>
+    <ion-icon name="search"></ion-icon>
+    <ion-icon name="logo-xbox"></ion-icon>
+    <ion-icon name="logo-windows"></ion-icon>
+    <ion-icon name="game-controller"></ion-icon>
+    <ion-icon name="logo-facebook"></ion-icon>
+    <ion-icon name="logo-youtube"></ion-icon>
+    <ion-icon name="logo-twitter"></ion-icon>
+ -->
